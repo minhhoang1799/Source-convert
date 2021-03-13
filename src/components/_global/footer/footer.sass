@@ -1,0 +1,39 @@
+.footer--wrapper
+    padding: 30px
+    //logo-footer-mobile
+    .wrapper--bottom__logo
+        text-align: center
+        margin-bottom: 20px
+.footer--contact
+    display: flex
+    flex-wrap: wrap
+.footer--contact__col
+    flex: 0 0 100%
+    max-width: 100%
+    @media (min-width: 786px)
+        flex: 0 0 calc(100%/2)
+        max-width: calc(100%/2)
+        &:first-child
+            flex: 0 0 100%
+            max-width: 100%
+    @media (min-width: 1025px)
+        flex: 0 0 calc(100%/3)
+        max-width: calc(100%/3)
+.contact--menu
+    li
+        em
+            margin-right: 5px
+        &:first-child
+            display: flex
+            align-items: center
+.contact--page
+    display: flex
+    flex-wrap: wrap
+    ul
+        flex: 0 0 50%
+        max-width: 50%
+.footer--copyright
+    display: flex
+    align-content: center
+    a
+        margin-left: 5px
